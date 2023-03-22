@@ -1,5 +1,5 @@
 <template>
     <h1 class="text-3xl font-bold underline">
-        Kokotinka   
+        Picus
     </h1>
 </template>
