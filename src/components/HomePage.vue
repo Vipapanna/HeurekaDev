@@ -10,7 +10,8 @@
 
   </div>
 
-  <section class=" mt-14 flex flex-row "  >
+  <section class="flex whitespace-nowrap overflow-auto scrollbar-hide" >
+
 
     <img src="/src/assets/images/banner1.jpeg"  class= " h-96  rounded-lg m-8 " alt="">
     <img src="/src/assets/images/banner2.jpeg" class= " h-96 rounded-lg m-8" alt="">
@@ -18,10 +19,8 @@
     <img src="/src/assets/images/banner4.jpeg" class= " h-96 rounded-lg m-8" alt="">
 
 
-
-
-    
   </section>
+  
 
 
      
