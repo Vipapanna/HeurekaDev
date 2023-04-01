@@ -82,6 +82,52 @@
 
 
   </section>
+
+  <section class=" grid grid-cols-4 gap-0  mx-16" >
+
+
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+
+
+    
+
+    
+
+    
+
+    
+
+  </section>
   
 
 
@@ -152,9 +198,10 @@ resetbtn.addEventListener('click', () =>
 
 import Searchbar from './Searchbar.vue'
 import Backbtn from './Backbtn.vue'
+import Card from './Card.vue'
 
 export default {
-  components: { Searchbar, Backbtn },
+  components: { Searchbar, Backbtn, Card },
     
 }
 </script>
