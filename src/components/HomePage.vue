@@ -1,30 +1,35 @@
 <template>
+  <section >
+   <!--navbar -->
   
-  <section class="bg-[#4C4556] flex    justify-end   h-20" >
+  <section class="bg-[#4C4556] flex h-20 items-center justify-between" >    
     
-    <object data="./src/assets/images/vipapanna1.svg" type="image/svg+xml"  class="  m-4 mr-[25rem] " > logo</object>
-    <Searchbar />
+    <object data="./src/assets/images/vipapanna1.svg" type="image/svg+xml"  class="  m-4 mr-[rem] " > logo</object>
+    
+    <Searchbar/>
 
-    <button id="login" class="  w-24  h-12 tex  rounded-2xl bg-white bg-opacity-20  drop-shadow-md text-white font-sans self-center mr-4   hover:opacity-90 ">
+    <button id="login" class="  w-24  h-12 tex  rounded-2xl bg-white bg-opacity-20  drop-shadow-md text-white font-sans self-center mr-4 hover:opacity-90 ">
       Log-In
     </button>
         
   </section>
       
-    
+    <!-- log in popup -->
 
+  <section class=" bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center  " id="overlay"> 
 
-  <section class=" bg-black bg-opacity-50 absolute inset-0  hidden justify-center items-center  " id="overlay"> 
     
-      
       <div class="bg-white rounded-2xl  flex flex-col w-[24rem] h-[28rem] justify-center items-center  " id="login-page" >
 
         <Backbtn id="back-btn" class="mt-4"  />
 
+        <!-- login a signup text pole -->
+        
         <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
         <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="Heslo"  name="" id="p1">
 
-        <div class="   space-x-24 mb-9 " >
+
+        <div class="space-x-24 mb-9 " >
           
           <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="create-account" >Vytvorit ucet</button>
           <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="forgotten-password" >Zabudnute heslo</button>
@@ -32,13 +37,13 @@
         </div>
 
 
-
         <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-28 h-9 hover:opacity-80 ">Log-In</button>
 
 
       </div>
+
                   
-      <div class="bg-white rounded-2xl  flex-col w-[24rem] h-[28rem] justify-center items-center  hidden "  id="register-page" >
+      <div class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden "  id="register-page" >
 
         <Backbtn id="back-btn" />
         
@@ -61,22 +66,14 @@
         <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10 " >Registracia</button>
 
       </div>
-      
+
+
+
     
-        
 
+    </section>
 
-
-  </section>
-
-
-
-
-
-
-
-
-  <section class="flex whitespace-nowrap overflow-auto scrollbar-hide" >
+  <section class="flex overflow-auto scrollbar-hide" >
 
 
     <img src="/src/assets/images/banner1.jpeg"  class= "h-96 rounded-lg m-4 " alt="">
@@ -87,9 +84,8 @@
 
   </section>
 
-  <section class=" grid grid-cols-4 gap-0  mx-16" >
+  <section class=" grid grid-cols-4 gap-0  mx-16">
 
-
     <Card/>
     <Card/>
     <Card/>
@@ -120,12 +116,7 @@
     <Card/>
     <Card/>
     <Card/>
-    <Card/>
-
-
-    
-
-    
+    <Card/>    
 
     
 
@@ -133,14 +124,12 @@
 
   </section>
   
-
-
      
 
 
     
 
-
+</section>
 
 
 </template>
@@ -205,7 +194,7 @@ import Backbtn from './Backbtn.vue'
 import Card from './Card.vue'
 
 export default {
-  components: { Searchbar, Backbtn, Card },
+  components: { Searchbar, Backbtn, Card, },
     
 }
 </script>
