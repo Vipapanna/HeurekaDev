@@ -1,9 +1,6 @@
 <template>
-<<<<<<< Updated upstream
-    <div class=" flex flex-col w-[19rem] m-4 drop-shadow-md ">
-=======
+    
     <div class=" flex flex-col w-[19rem] m-4 drop-shadow-md" >
->>>>>>> Stashed changes
       <img class="w-[19rem] h-[11rem] rounded-t-2xl" src="src/assets/images/mcdonald-card.png" alt="">
       
       <div class="bg-[#F8EDE3] rounded-b-2xl">
