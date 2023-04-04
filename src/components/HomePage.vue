@@ -16,107 +16,46 @@
       
     <!-- log in popup -->
 
-  <section class=" bg-black bg-opacity-50 absolute inset-0 hidden justify-center items-center  " id="overlay"> 
+  <section class=" absolute justify-center items-center	" id="overlay"> 
+    <div class="flex overflow-auto scrollbar-hide" >
 
+
+<img src="/src/assets/images/banner1.jpeg"  class= "h-96 rounded-lg m-4 " alt="">
+<img src="/src/assets/images/banner2.jpeg" class= " h-96 rounded-lg m-4" alt="">
+<img src="/src/assets/images/banner3.jpeg" class= " h-96 rounded-lg m-4" alt="">
+<img src="/src/assets/images/banner4.jpeg" class= " h-96 rounded-lg m-4" alt="">
+
+
+
+    </div>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
     
-      <div class="bg-white rounded-2xl  flex flex-col w-[24rem] h-[28rem] justify-center items-center  " id="login-page" >
-
-        <Backbtn id="back-btn" class="mt-4"  />
-
-        <!-- login a signup text pole -->
-        
-        <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
-        <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="Heslo"  name="" id="p1">
-
-
-        <div class="space-x-24 mb-9 " >
-          
-          <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="create-account" >Vytvorit ucet</button>
-          <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="forgotten-password" >Zabudnute heslo</button>
-
-        </div>
-
-
-        <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-28 h-9 hover:opacity-80 ">Log-In</button>
-
-
-      </div>
-
-                  
-      <div class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden "  id="register-page" >
-
-        <Backbtn id="back-btn" />
-        
-        <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
-        <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="Heslo"  name="" id="p1">
-        <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="znova zadanie Heslo"  name="" id="p1">
-
-        <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10 " >Registracia</button>
-
-      </div>
-
-      <div class="bg-white rounded-2xl  flex-col w-[24rem] h-[28rem] justify-center items-center  hidden "  id="reset-password-page" >
-
-        <Backbtn id="back-btn" />
-
-        <h1 class="  mb-14 text-center " >Na zadanú emailovu adresu vám bude <br> zaslaný link na obnovu vašeho hesla</h1>
-        <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
-
-
-        <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10 " >Registracia</button>
-
-      </div>
-
-
-
-    
-
-    </section>
-
-  <section class="flex overflow-auto scrollbar-hide" >
-
-
-    <img src="/src/assets/images/banner1.jpeg"  class= "h-96 rounded-lg m-4 " alt="">
-    <img src="/src/assets/images/banner2.jpeg" class= " h-96 rounded-lg m-4" alt="">
-    <img src="/src/assets/images/banner3.jpeg" class= " h-96 rounded-lg m-4" alt="">
-    <img src="/src/assets/images/banner4.jpeg" class= " h-96 rounded-lg m-4" alt="">
-
-
   </section>
+
+  
+
+    
+
+
+
 
   <section class=" grid grid-cols-4 gap-0  mx-16">
 
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>    
 
     
 
@@ -154,18 +93,14 @@ window.addEventListener('DOMContentLoaded', () =>
 
 login.addEventListener('click', () => 
 {
-
-  overlay.classList.remove('hidden')
-  overlay.classList.add('flex')
+  overlay.classList.add('backdrop-brightness-60')
+  overlay.classList.add('opacity-50') 
 
 })
 backbtn.addEventListener('click', () => 
 {
- 
   overlay.classList.remove('flex')
   overlay.classList.add('hidden')
-  
-
 })
 
 register.addEventListener('click', () =>
@@ -183,7 +118,9 @@ resetbtn.addEventListener('click', () =>
   resetpasspage.classList.remove('hidden')
   resetpasspage.classList.add('flex')
 })
+loginpg.addEventListener('click', () =>{
 
+})
 
 })
 
@@ -198,3 +135,53 @@ export default {
     
 }
 </script>
+
+<!-- 
+  
+<div class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden  " id="login-page" >
+
+  <Backbtn id="back-btn" class="mt-4"  />
+
+  
+  <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
+  <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="Heslo"  name="" id="p1">
+
+
+  <div class="space-x-24 mb-9 " >
+    
+    <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="create-account" >Vytvorit ucet</button>
+    <button class="  bg-transparent text-[0.8rem]  text-blue-500" id="forgotten-password" >Zabudnute heslo</button>
+
+  </div>
+
+
+  <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-28 h-9 hover:opacity-80 ">Log-In</button>
+
+
+</div>
+
+            
+<div class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden "  id="register-page" >
+
+  <Backbtn id="back-btn" />
+  
+  <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
+  <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="Heslo"  name="" id="p1">
+  <input type="password" class="h-8 rounded-3xl self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2 text-center " placeholder="znova zadanie Heslo"  name="" id="p1">
+
+  <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10 " >Registracia</button>
+
+</div>
+
+<div class="bg-white rounded-2xl  flex-col w-[24rem] h-[28rem] justify-center items-center  hidden "  id="reset-password-page" >
+
+  <Backbtn id="back-btn" />
+
+  <h1 class="  mb-14 text-center " >Na zadanú emailovu adresu vám bude <br> zaslaný link na obnovu vašeho hesla</h1>
+  <input type="email" class="h-8 rounded-3xl  self-center  bg-gray-400 bg-opacity-20  drop-shadow-md  w-[18rem] m-2  text-center" placeholder="example@gmail.com"  name="" id="e1">
+
+
+  <button class=" rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10 " >Registracia</button>
+
+</div>
+ -->
