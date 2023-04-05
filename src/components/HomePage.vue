@@ -11,7 +11,6 @@
     <button id="login" class="  w-24  h-12 tex  rounded-2xl bg-white bg-opacity-20  drop-shadow-md text-white font-sans self-center mr-4 hover:opacity-90 ">
       Log-In
     </button>
-        
   </section>
       
     <!-- log in popup -->
@@ -71,69 +70,58 @@
 </section>
 
 
+  <section class="bg-[#4C4556] flex  h-60 ">
+    <div class="grid grid-cols-2  gap-4 h-36 self-center ml-10 ">
+      <button class="text-white m-0 text-xl text-left  font-sans-serif">Cookies</button>
+      <button class="text-white m-0 text-xl text-left">About us</button>
+      <button class="text-white m-0 text-xl text-left">FAQs</button>
+      <button class="text-white m-0 text-xl text-left ">Contact us</button>
+    </div>
+  </section>
 </template>
 
 <script>
+window.addEventListener("DOMContentLoaded", () => {
+  const login = document.querySelector("#login");
+  const overlay = document.querySelector("#overlay");
+  const backbtn = document.querySelector("#back-btn");
+  const register = document.querySelector("#create-account");
+  const regpage = document.querySelector("#register-page");
+  const loginp = document.querySelector("#login-page");
+  const resetbtn = document.querySelector("#forgotten-password");
+  const resetpasspage = document.querySelector("#reset-password-page");
 
+  login.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+    overlay.classList.add("flex");
+  });
+  backbtn.addEventListener("click", () => {
+    overlay.classList.remove("flex");
+    overlay.classList.add("hidden");
+  });
 
+  register.addEventListener("click", () => {
+    loginp.classList.remove("flex");
+    loginp.classList.add("hidden");
+    regpage.classList.remove("hidden");
+    regpage.classList.add("flex");
+  });
 
+  resetbtn.addEventListener("click", () => {
+    loginp.classList.remove("flex");
+    loginp.classList.add("hidden");
+    resetpasspage.classList.remove("hidden");
+    resetpasspage.classList.add("flex");
+  });
+});
 
-window.addEventListener('DOMContentLoaded', () =>
-{
-  const login = document.querySelector('#login')
-  const overlay = document.querySelector('#overlay')
-  const backbtn = document.querySelector('#back-btn')
-  const register = document.querySelector('#create-account')
-  const regpage = document.querySelector('#register-page')
-  const loginp = document.querySelector('#login-page')
-  const resetbtn = document.querySelector('#forgotten-password')
-  const resetpasspage = document.querySelector('#reset-password-page')
-  
-
-
-login.addEventListener('click', () => 
-{
-  overlay.classList.add('backdrop-brightness-60')
-  overlay.classList.add('opacity-50') 
-
-})
-backbtn.addEventListener('click', () => 
-{
-  overlay.classList.remove('flex')
-  overlay.classList.add('hidden')
-})
-
-register.addEventListener('click', () =>
-{
-  loginp.classList.remove('flex')
-  loginp.classList.add('hidden')
-  regpage.classList.remove('hidden')
-  regpage.classList.add('flex')
-})
-
-resetbtn.addEventListener('click', () =>
-{
-  loginp.classList.remove('flex')
-  loginp.classList.add('hidden')
-  resetpasspage.classList.remove('hidden')
-  resetpasspage.classList.add('flex')
-})
-loginpg.addEventListener('click', () =>{
-
-})
-
-})
-
-
-
-import Searchbar from './Searchbar.vue'
-import Backbtn from './Backbtn.vue'
-import Card from './Card.vue'
+import Searchbar from "./Searchbar.vue";
+import Backbtn from "./Backbtn.vue";
+import Card from "./Card.vue";
 
 export default {
-  components: { Searchbar, Backbtn, Card, },
-    
-}
+  components: { Searchbar, Backbtn, Card },
+};
 </script>
 
 <!-- 

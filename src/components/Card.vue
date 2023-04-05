@@ -1,5 +1,6 @@
 <template>
-    <div class=" flex flex-col w-[19rem] m-4 drop-shadow-md " id="overlay">
+    
+    <div class=" flex flex-col w-[19rem] m-4 drop-shadow-md" >
       <img class="w-[19rem] h-[11rem] rounded-t-2xl" src="src/assets/images/mcdonald-card.png" alt="">
       
       <div class="bg-[#F8EDE3] rounded-b-2xl">
@@ -15,4 +16,6 @@
       </div>
 
     </div>
+
+
 </template>
