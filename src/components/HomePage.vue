@@ -32,7 +32,7 @@
       <Backbtn id="back-btn" class="mt-4" />
 
       <div class="mb-9 flex flex-col items-center justify-center">
-        <!-- login a signup text pole -->
+        
 
         <input
           type="email"
@@ -49,44 +49,36 @@
           id="p1"
         />
 
-        <div class=" flex  justify-between w-full mb-9">
+        <div class=" flex  justify-between w-full ">
           <button
             class="bg-transparent text-[0.8rem] text-blue-500"
             id="create-account"
           >
             Vytvorit ucet
           </button>
-          <button 
+
+          <button
             class="bg-transparent text-[0.8rem] text-blue-500"
             id="forgotten-password"
           >
-            Zabudnute heslo
+            Zabudnute Heslo
           </button>
-        </div>
-
-        <button
-          class="rounded-xl bg-gray-400 bg-opacity-20 w-28 h-9 hover:opacity-80"
-        >
-          Log-In
-        </button>
-      </div>
+          </div>
+          <button
+        class="rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10"
+        id=""
+      >
+        Login
+      </button>
+          </div>
+          </div>
+          
 
       <div
         class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden"
         id="register-page"
       >
-        <button
-          class="rounded-xl bg-gray-400 bg-opacity-20 w-28 h-9 hover:opacity-80"
-        >
-          LogIn
-        </button>
-      </div>
-    </div>
-
-    <div
-      class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden"
-      id="register-page"
-    >
+        
       <Backbtn id="back-btn" />
 
       <input
@@ -139,7 +131,7 @@
       <button
         class="rounded-xl bg-gray-400 bg-opacity-20 w-32 h-10 hover:opacity-80 mt-10"
       >
-        Registracia
+        odoslat
       </button>
     </div>
   </section>
@@ -190,12 +182,12 @@
     <Card />
   </section>
 
-  <section class="bg-[#4C4556] flex flex-row h-60">
-    <div class="grid grid-cols-2 gap-0 h-36 self-center">
-      <button class="text-white m-0 text-2xl">Cookies</button>
-      <button class="text-white m-0 text-2xl">About us</button>
-      <button class="text-white m-0 text-2xl">FAQs</button>
-      <button class="text-white m-0 text-2xl">Contact us</button>
+  <section class="bg-[#4C4556] flex  h-60 ">
+    <div class="grid grid-cols-2  gap-4 h-36 self-center ml-10 ">
+      <button class="text-white m-0 text-xl text-left  font-sans-serif">Cookies</button>
+      <button class="text-white m-0 text-xl text-left">About us</button>
+      <button class="text-white m-0 text-xl text-left">FAQs</button>
+      <button class="text-white m-0 text-xl text-left ">Contact us</button>
     </div>
   </section>
 </template>
