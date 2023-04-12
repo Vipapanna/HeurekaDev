@@ -27,7 +27,7 @@
     >
       <div
         class="bg-white rounded-2xl flex flex-col w-[24rem] h-[28rem] justify-center items-center absolute"
-        id="logpage"
+        id="loginp"
       >
         <Backbtn 
         class="mt-4" 
@@ -61,6 +61,7 @@
           
           <button
             class="bg-transparent text-[0.8rem] text-blue-500"
+            @click="forgotpasword"
             id="forgotten-password"
           >
             Zabudnute heslo
@@ -80,7 +81,8 @@
         id="regpage"
       >
         <Backbtn 
-        @click="close"
+        class="mt-4"
+        @click="regclose"
         />
   
         <input
@@ -115,10 +117,10 @@
   
       <div
         class="bg-white rounded-2xl flex-col w-[24rem] h-[28rem] justify-center items-center hidden"
-        @click="forgotpasword"
-        id="reset-password-page"
+        id="resetpasswordpage"
       >
-        <Backbtn id="back-btn" />
+        <Backbtn id="back-btn" 
+        @click="forgotclose"/>
   
         <h1 class="mb-14 text-center">
           Na zadanú emailovu adresu vám bude <br />
@@ -188,11 +190,6 @@
           image: 'https://imageproxy.wolt.com/venue/5e7380c5908a43f00c9e29dd/9e629e20-4437-11eb-b6ee-d6ad5cf43059_mcd_hero_photo_1010x544px.jpg?w=200',
           rating: 5
         },
-        {
-          title: "",
-          image: "",
-          rating: 5
-        }
   
         ]
       }
@@ -204,46 +201,41 @@
         popup() {
           overlay.classList.remove("hidden");
           overlay.classList.add("flex");
-          overlay.classList.add("overflow-hidden")
-          regpage.classList.add("hidden")
-          loginp.classList.remove("hidden")
+          loginp.classList.remove("hidden");
+          loginp.classList.add("flex");
         },
         register() {
-          logpage.classList.add("hidden");
+          loginp.classList.add("hidden");
           regpage.classList.remove("hidden");
           regpage.classList.add("flex");
         },
         forgotpasword(){
-          loginp.classList.remove("flex");
           loginp.classList.add("hidden");
-          resetpasspage.classList.remove("hidden");
-          resetpasspage.classList.add("flex");
-          
+          loginp.classList.remove("flex");
+          resetpasswordpage.classList.remove("hidden");
+          resetpasswordpage.classList.add("flex");
         },
         close() {
           overlay.classList.remove("flex");
           overlay.classList.add("hidden");
+          loginp.classList.add("hidden");
+          loginp.classList.remove("flex");
+        },
+        regclose() {
+          overlay.classList.remove("flex");
+          overlay.classList.add("hidden");
+          regpage.classList.add("hidden");
+          regpage.classList.remove("flex");
+        },
+        forgotclose(){
+          overlay.classList.remove("flex");
+          overlay.classList.add("hidden");
+          resetpasswordpage.classList.add("hidden");
+          resetpasswordpage.classList.remove("flex");
         },
       }
     }
   };
-  
-  window.addEventListener("DOMContentLoaded", () => {
-    const register = document.querySelector("#create-account");
-    const loginp = document.querySelector("#login-page");
-    const resetbtn = document.querySelector("#forgotten-password");
-    const resetpasspage = document.querySelector("#reset-password-page");
-  
-
-    register.addEventListener("click", () => {
-
-    });
-  
-    resetbtn.addEventListener("click", () => {
-
-    });
-  });
-  
   
   
   </script>
