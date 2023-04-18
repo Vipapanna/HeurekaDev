@@ -190,16 +190,14 @@
           image: 'https://imageproxy.wolt.com/venue/5e7380c5908a43f00c9e29dd/9e629e20-4437-11eb-b6ee-d6ad5cf43059_mcd_hero_photo_1010x544px.jpg?w=200',
           rating: 5
         },
-  
+        
         ]
       }
     },
-    components: { Searchbar, Backbtn, Card },
     
-    data(){
-      return{
-        popup() {
-          overlay.classList.remove("hidden");
+    
+    popup() {
+      overlay.classList.remove("hidden");
           overlay.classList.add("flex");
           loginp.classList.remove("hidden");
           loginp.classList.add("flex");
@@ -232,11 +230,11 @@
           overlay.classList.add("hidden");
           resetpasswordpage.classList.add("hidden");
           resetpasswordpage.classList.remove("flex");
+          
+          components: { Searchbar, Backbtn, Card },
         },
       }
-    }
-  };
-  
+    
   
   </script>
   
